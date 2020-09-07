@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>How to use VIM</title>
+	<link href="./vim-tutorial.css" rel="stylesheet">
 </head>
 <body>
 <h1>VIM</h1>
 	<pre>VIM is a editor using without mouse!</pre>
 	
-<strong>:</strong> => <em>w (write) | q (quit) | q! (quit without save)</em>
-<h2>Move using keys</h2>
+<h2 id="move-keys">Move using keys</h2>
 <ul>
 	<li>K: Up</li>
 	<li>J: Down</li>
@@ -17,8 +17,9 @@
 </ul>
 
 <h2>Modes</h2>
+	<strong>:</strong> => <em>w (write) | q (quit) | q! (quit without save)</em>
 	<h3>Visual Mode => ctrl + V</h3>
-	<pre>That mode allows you to select a block of caracters or code, using the command showed before.</pre>
+	<pre>That mode allows you to select a block of caracters or code.</pre>
 	<h3>Insert Mode => I (to blink point) || A (to insert avance one character on blink point) || O (to break a line and enter)</h3>
 	<pre>That mode allows to write the document.</pre>
 
@@ -33,6 +34,7 @@
 	
 	<ul>
 		<li><strong>dd =></strong> delete line</li>
+		<li><strong>d + <a href="#move-keys" class="default-text"><em>move keys</em></a> =></strong> delete according the move keys</li>
 	</ul>
 	
 	<br>

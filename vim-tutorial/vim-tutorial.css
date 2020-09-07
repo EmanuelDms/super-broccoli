@@ -1,0 +1,4 @@
+.default-text, .default-text:hover, .default-text:visited, .default-text:active, .default-text:link{
+	/*text-decoration: none;*/
+	color: black;
+}
