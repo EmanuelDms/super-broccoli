@@ -5,9 +5,10 @@
 	<link href="./vim-tutorial.css" rel="stylesheet">
 </head>
 <body>
+<header>
 <h1>VIM</h1>
 	<pre>VIM is a editor using without mouse!</pre>
-	
+</header>	
 <h2 id="move-keys">Move the cursor</h2>
 <ul>
 	<li>K: Up</li>
@@ -17,31 +18,62 @@
 </ul>
 
 <h2>Modes</h2>
-	<strong>:</strong> => <em>w (write) | q (quit) | q! (quit without save)</em>
-	<h3>Visual Mode => ctrl + V</h3>
-	<pre>That mode allows you to select a block of caracters or code.</pre>
-	<h3>Insert Mode => I (to blink point) || A (to insert avance one character on blink point) || O (to break a line and enter)</h3>
-	<pre>That mode allows to write the document.</pre>
 
-	<h3>Replace => r</h3>
-	<pre>Replace characters;</pre> 
+	<ul>
+		<li>
+			<h3>Normal Mode</h3>
+			<strong>:</strong> => <em>w (write) | q (quit) | q! (quit without save)</em>
+		</li>
+		<li>
+			<h3>Visual Mode</h3>
+			<pre>That mode allows you to select a block of caracters or code.</pre>
+			<h4>ctrl + V => Visual Block</h4>	
+			<h4>shift + V => Visual Inline</h4>	
+			<h4>V => Visual Single-Characters</h4>	
+		</li>
+		
+	
+		<li>
+			<h3>Insert Mode</h3>
+			<pre>That mode allows write in archive.</pre>
+			<h4>I (to blink point) 
+			<h4>A (to insert avance one character on blink point)</h4> 
+			<h4>O (to break a line and enter)</h4>
+		</li>
 
-<h2>Typing commands</h2><ul>
+		<li>
+			<h3>Command Mode</h3>
+			<pre>That mode allows to do thing that normal mode can't do as easily.</pre>
+			<p>
+				<em>:%s/foo/bar/g</em> (Replace all 'foo' with 'bar')
+			</p>
+			
+			<strong>:</strong> => enters command mode<br>
+			<strong>%</strong> => means across all line<br>
+			<strong>s</strong> => means substitute <br>
+			<strong>/foo</strong> => is regex to find things to replace<br>
+			<strong>/bar/</strong> => is regex to replace thing with<br>
+			<strong>/g/</strong> => global, otherwise it would only execute once per line
+		</li>
+
+		</ul>
+
+	<li><strong>r =></strong> replace mode</li>
+	<h2>Typing commands</h2><ul>
+
 	<li><strong>yy =></strong> copy a line</li>
 	<li><strong>shift + p =></strong> paste above the copied</li>
 	<li><strong>p =></strong> paste below the copied element</li>
 
-	<br>
-
-	<li><strong>d =></strong> Delete</li>
-	
-	<ul>
-		<li><strong>dd =></strong> delete line</li>
-		<li><strong>d + <a href="#move-keys" class="default-text"><em>move keys</em></a> =></strong> delete according the move keys</li>
-		<li><strong><em>x</em> + d =></strong> delete a number of lines according the value put in x.</li>
-	</ul>
-	
-	<br>
+	<li>
+		<strong>d =></strong> Delete
+		<ul>
+			<li><strong>dd =></strong> delete line</li>
+			<li><strong>x =></strong> Delete single characters</li>
+			<li><strong>d + <a href="#move-keys" class="default-text"><em>move keys</em></a> =></strong> delete according the move keys</li>
+			<li><strong><em>x</em> + d =></strong> delete a number of lines according the value put in x.</li>
+		</ul>
+	</li>
 
 	<li><strong>gg =></strong> top of archive in vim</li>
 	<li><strong>shift + g =></strong> bottom of archive in vim</li>
@@ -81,18 +113,6 @@
 	<li><strong> =></strong> </li>
 	<li><strong> =></strong> </li>
 </ul>
-<script>
-
-/*
-ssaas
-sasasa
-as
-sasa
-sa
-sasa
-as
-*/
-</script>
 <footer>
 Useful sources:
 	<p>
