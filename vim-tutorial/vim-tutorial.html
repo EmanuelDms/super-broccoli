@@ -3,13 +3,14 @@
 <head>
 	<title>How to use VIM</title>
 	<link href="./vim-tutorial.css" rel="stylesheet">
+	<link rel="icon" href="./vim.ico">
 </head>
 <body>
 <header>
 	<img src="./vim_header.gif"/><br>
 	<pre>VIM is a editor using without mouse!</pre>
 </header>	
-<h2 id="move-keys">Move the cursor</h2>
+<h2 id="move-keys">Move Keys</h2>
 <ul>
 	<li>K: Up</li>
 	<li>J: Down</li>
@@ -72,6 +73,7 @@
 			<li><strong>x =></strong> Delete single characters</li>
 			<li><strong>d + <a href="#move-keys" class="default-text"><em>move keys</em></a> =></strong> delete according the move keys</li>
 			<li><strong><em>x</em> + d =></strong> delete a number of lines according the value put in x.</li>
+			<li><strong>shift + d =></strong> Delete the remaining of line since where cursor is.</li>
 		</ul>
 	</li>
 
@@ -101,14 +103,18 @@
 	
 	<br>
 
-	<h3>Moving across the line</h3>
+	<h3 id="move-across">Moving across the line</h3>
 	<li><strong>w =></strong> move to the next word in line.</li> 
 	<li><strong>b =></strong> move to the word before in line.</li><em>obs: using capital (shift + <u>key</u>) you can jump the puntuactions</em>
 	<li><strong>e =></strong> move to the end of word.</li>
 	<li><strong>t + letter => </strong>go-to next a letter in line</li>
 	<li><strong>f + letter => </strong>go-to a letter in line</li>
-	<li><strong> =></strong> </li>
-	<li><strong> =></strong> </li>
+	<li><strong>% =></strong> Take you on the same line or else span multiple lines.</li>
+	<li><strong>c =></strong> Change a sentence for another text
+	<ul>
+		<li><strong>c + <a href="#move-keys" class="default-text"><em>move keys</em></a></strong></li>	
+		<li><strong>c + <a href="#move-across" class="default-text"><em>moves across the line</em></a></strong></li>	
+	</li>
 	<li><strong> =></strong> </li>
 	<li><strong> =></strong> </li>
 	<li><strong> =></strong> </li>
@@ -123,5 +129,11 @@ Useful sources:
 		<a href="https://www.youtube.com/watch?v=IiwGbcd8S7I">VIM Tutorial - Ben Awad</a>
 	</p>
 </footer>
+<script>
+let x = false;
+
+/* alert((x) ? "Verdade!" : "Mentira!");*/
+
+</script>
 </body>
 </html>
