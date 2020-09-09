@@ -3,6 +3,10 @@
 	color: black;
 }
 
+body{
+	background: #CCCC99;
+}
+
 header{
 	text-align: center;
 }
