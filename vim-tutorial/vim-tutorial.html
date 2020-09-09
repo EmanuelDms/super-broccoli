@@ -36,7 +36,7 @@
 		</li>
 	
 		<li>
-			<h3>Insert Mode</h3>
+			<h3 id="insert-mode">Insert Mode</h3>
 			<pre>That mode allows write in archive.</pre>
 			<h4>I (Insert: to blink point) 
 			<h4>A (Append: to insert avance one character on blink point)</h4> 
@@ -63,8 +63,16 @@
 	<h2>Typing commands</h2><ul>
 
 	<li><strong>yy =></strong> copy a line</li>
-	<li><strong>shift + p =></strong> paste above the copied</li>
-	<li><strong>p =></strong> paste below the copied element</li>
+
+	<br>
+
+	<li><strong>p =></strong> paste below the copied element
+		<ul>
+			<li><strong>shift + p =></strong> paste above the copied</li>
+		</ul>
+	</li>
+
+	<br>
 
 	<li>
 		<strong>d =></strong> Delete
@@ -73,7 +81,8 @@
 			<li><strong>x =></strong> Delete single characters</li>
 			<li><strong>d + <a href="#move-keys" class="default-text"><em>move keys</em></a> =></strong> delete according the move keys</li>
 			<li><strong><em>x</em> + d =></strong> delete a number of lines according the value put in x.</li>
-			<li><strong>shift + d =></strong> Delete the remaining of line since where cursor is.</li>
+			<li><strong>shift (capital) + d =></strong> Delete the remaining of line since where cursor is.</li>
+			<li><strong>d + <a href="#f-t" class="default-text"><em>f or t</em></a> + letter =></strong> Delete word until a letter.</li>
 		</ul>
 	</li>
 
@@ -100,20 +109,42 @@
 	<li><strong><em>x</em> + gg</strong> or <strong>:<em>x</em> =></strong> Acess a <em>x</em> numbers line of the archive</li>
 	<li><strong><em>x</em> + <em>move keys</em> =></strong> Move a <em>x</em> numbers characters of the line</li>
 	<li><strong><em>x</em> + <em>move keys</em> =></strong> Move a <em>x</em> numbers characters of the line</li>
-	
+
+	<h3 id="move-across">Move across the line</h3>
+	<li><strong>w =></strong> move to the next word in line.</li> 
+	<li><strong>b =></strong> move to the word before in line.</li>
+		<em>obs: using capital (shift + &lt;w or b&gt;) you can jump the puntuactions</em>
+
+	<li><strong>e =></strong> move to the end of word.</li>
+
 	<br>
 
-	<h3 id="move-across">Moving across the line</h3>
-	<li><strong>w =></strong> move to the next word in line.</li> 
-	<li><strong>b =></strong> move to the word before in line.</li><em>obs: using capital (shift + <u>key</u>) you can jump the puntuactions</em>
-	<li><strong>e =></strong> move to the end of word.</li>
-	<li><strong>t + letter => </strong>go-to next a letter in line</li>
-	<li><strong>f + letter => </strong>go-to a letter in line</li>
+	<li id="f-t">
+		<strong>t + letter => </strong>go-to next a letter in line
+		<br><strong>f + letter => </strong>go-to a letter in line
+	</li>
+
+	<br>
+
 	<li><strong>% =></strong> Take you on the same line or else span multiple lines.</li>
+
+	<br>
+
 	<li><strong>c =></strong> Change a sentence for another text
-	<ul>
-		<li><strong>c + <a href="#move-keys" class="default-text"><em>move keys</em></a></strong></li>	
-		<li><strong>c + <a href="#move-across" class="default-text"><em>moves across the line</em></a></strong></li>	
+		<ul>
+			<li>
+				<strong>c + <a href="#move-keys" class="default-text"><em>move keys</em></a></strong>
+			</li>
+			<li>
+				<strong>c + <a href="#move-across" class="default-text"><em>moves across the line</em></a></strong>
+			</li>	
+			<li>
+				<strong>shift (capital) + c =></strong> Delete the remaining of line since where cursor is and enter in <a href="#insert-mode" class="default-text"><strong>Insert Mode</strong></a>.
+			</li>	
+			<li>
+				<strong>d + <a href="#f-t" class="default-text"><em>f or t</em></a> + letter =></strong> Delete word until a letter.
+			</li>	
+		</ul>
 	</li>
 	<li><strong> =></strong> </li>
 	<li><strong> =></strong> </li>

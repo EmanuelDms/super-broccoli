@@ -5,8 +5,10 @@
 
 body{
 	background: #CCCC99;
+	
 }
 
 header{
 	text-align: center;
+	font-size: 1.5rem;
 }
