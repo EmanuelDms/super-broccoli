@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+
+body{
+  padding: 2rem;
+  background: #ccc;
+}
+
+.photo{
+  height: 200px;
+  width: 350px;
+  border-radius: 50%;
+  border: 4px solid #505050;
+}
+
+ol{
+  margin: 1rem;
+}
+
+#title, .subtitle, .post_title{
+  color: #505050;
+}
+
+section > header{
+  color: #505050;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.post_title{
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.post{
+  /* box model */
+  background: #FFF;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 15px;
+  border: 3px solid #505050;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.post-image{
+  width: 650px;
+  height: 400px;
+}
+
+.post_content{
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.post_content>legend{
+  text-align: center;
+  font-weight: bold;
+}
